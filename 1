@@ -1,0 +1,16 @@
+valid_username="manoj"
+
+valid_password="Manoj@008"
+
+read -p "Enter your username: " entered_username
+
+echo -n "Enter your password: "
+read -r entered_password
+echo  
+
+
+if [ "$entered_username" = "$valid_username" ] && [ "$entered_password" = "$valid_password" ]; then
+    echo "Login successful. Welcome, $entered_username!"
+else
+    echo "Invalid username or password. Access denied."
+fi
